@@ -24,6 +24,11 @@ export default {
                     marks: {
                         decorators: [
                             {
+                                title: 'Norm',
+                                value: 'norm',
+                                icon: () => 'N'
+                            },
+                            {
                                 title: 'Info',
                                 value: 'info',
                                 icon: () => 'I',

@@ -1,3 +1,9 @@
+import { infoDecorator } from "./decorators/InfoDecorator"
+import { failureDecorator } from "./decorators/FailureDecorator"
+import { successDecorator } from "./decorators/SuccessDecorator"
+import { quoteDecorator } from "./decorators/QuoteDecorator"
+import { alertDecorator } from "./decorators/AlertDecorator"
+
 export default {
     title: 'Content editor',
     type: 'object',
@@ -12,33 +18,43 @@ export default {
                 {
                     type: 'block',
                     styles: [
-                        { title: 'Normal', value: 'normal' },
-                        { title: 'Quote', value: 'blockquote' },
+                        { title: 'Normal', value: 'normal' }
                     ],
+                    lists: [],
                     marks: {
                         decorators: [
                             {
-                                title: 'Strong',
-                                value: 'strong'
+                                title: 'Info',
+                                value: 'info',
+                                icon: () => 'I',
+                                component: infoDecorator
                             },
                             {
-                                title: 'Emphasis',
-                                value: 'em'
+                                title: 'Alert',
+                                value: 'alert',
+                                icon: () => 'A',
+                                component: alertDecorator
+                            },
+                            {
+                                title: 'Failure',
+                                value: 'failure',
+                                icon: () => 'F',
+                                component: failureDecorator
+                            },
+                            {
+                                title: 'Success',
+                                value: 'success',
+                                icon: () => 'S',
+                                component: successDecorator
+                            },
+                            {
+                                title: 'Quote',
+                                value: 'quote',
+                                icon: () => 'Q',
+                                component: quoteDecorator
                             },
                         ],
-                        annotations: [
-                            {
-                                name: 'link',
-                                type: 'object',
-                                title: 'Link',
-                                fields: [
-                                    {
-                                        name: 'href',
-                                        type: 'string'
-                                    }
-                                ]
-                            },
-                        ]
+                        annotations: [],
                     },
                 },
             ]

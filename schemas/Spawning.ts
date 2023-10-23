@@ -1,28 +1,19 @@
 export default {
     name: 'spawning',
     title: 'Spawning',
+    icon: () => '🐣',
     type: 'document',
     fields: [
         {
             name: 'title',
-            title: 'Title (english)',
+            title: 'Title',
             type: 'string',
             validation: (Rule: any) => Rule.required(),
         },
         {
+            title: 'Content',
             name: 'content',
-            title: 'Content (english)',
             type: 'contentEditor',
-        },
-        {
-            name: 'slug',
-            title: 'Slug',
-            type: 'slug',
-            options: {
-                source: 'title',
-                maxLength: 96,
-            },
-            validation: (Rule: any) => Rule.required()
         }
     ],
 }

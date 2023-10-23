@@ -1,28 +1,19 @@
 export default {
     name: 'loading',
+    icon: () => '🚚',
     title: 'Loading',
     type: 'document',
     fields: [
         {
             name: 'title',
-            title: 'Title (english)',
+            title: 'Title',
             type: 'string',
             validation: (Rule: any) => Rule.required(),
         },
         {
             name: 'content',
-            title: 'Content (english)',
+            title: 'Content',
             type: 'contentEditor',
         },
-        {
-            name: 'slug',
-            title: 'Slug',
-            type: 'slug',
-            options: {
-                source: 'title',
-                maxLength: 96,
-            },
-            validation: (Rule: any) => Rule.required()
-        }
     ],
 }

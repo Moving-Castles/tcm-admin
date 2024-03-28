@@ -4,5 +4,6 @@ import Tutorial from './Tutorial'
 import ContentEditor from "./ContentEditor"
 import Level from './Level'
 import Machine from './Machine'
+import Message from './Message'
 
-export const schemaTypes = [Loading, Spawning, Level, Machine, ContentEditor, Tutorial]
+export const schemaTypes = [Loading, Spawning, Level, Machine, ContentEditor, Tutorial, Message]

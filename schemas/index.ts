@@ -1,9 +1,8 @@
 import Loading from './Loading'
-import Spawning from './Spawning'
 import Tutorial from './Tutorial'
 import ContentEditor from "./ContentEditor"
-import Level from './Level'
 import Machine from './Machine'
+import Material from './Material'
 import Message from './Message'
 
-export const schemaTypes = [Loading, Spawning, Level, Machine, ContentEditor, Tutorial, Message]
+export const schemaTypes = [Loading, Machine, ContentEditor, Tutorial, Message, Material]

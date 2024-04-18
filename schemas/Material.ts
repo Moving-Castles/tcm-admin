@@ -13,7 +13,8 @@ export default {
       {
           title: 'Category',
           name: 'category',
-          type: 'string',
+          type: 'array',
+          of: [{type: 'string'}],
           options: {
               list: [
                 { title: "Product", value: "PRODUCT" },
@@ -27,7 +28,6 @@ export default {
                 
               ]
           },
-          validation: (Rule: any) => Rule.required(),
       },
       {
           title: 'Title',

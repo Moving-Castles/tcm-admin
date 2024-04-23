@@ -15,14 +15,39 @@ export default {
       title: 'Title'
     },
     {
+      type: 'string',
+      name: 'sender',
+      title: 'Sender'
+    },
+    {
       type: 'text',
       name: 'description',
       title: 'Description'
     },
     {
-      type: 'image',
-      name: 'attachment',
-      title: 'Attachment'
+      type: 'array',
+      name: 'attachments',
+      title: 'Attachment',
+      of: [
+        {
+          type: 'object',
+          name: 'attachment',
+          title: 'Attachment',
+          fields: [
+
+            {
+              type: 'image',
+              name: 'image',
+              title: 'Attachment'
+            },
+            {
+              type: 'string',
+              name: 'filename',
+              title: 'Filename'
+            },
+          ]
+        }
+      ]
     },
   ]
 }

@@ -11,6 +11,49 @@ export default {
           validation: (Rule: any) => Rule.required(),
       },
       {
+        type: 'image',
+        name: 'image',
+        title: 'Image',
+        validation: (Rule: any) => Rule.required(),
+      },
+      {
+        title: 'Color',
+        name: 'color',
+        type: 'color',
+        options: {
+          disableAlpha: true,
+          colorList: [
+            "red",
+            "yellow",
+            "green",
+            "blue",
+            "purple",
+            "orange",
+            "brown",
+            "#FF7F7F",
+            "#800000",
+            "#FFFF7F",
+            "#808000",
+            "#7FFF7F",
+            "#008000",
+            "#7F7FFF",
+            "#000080",
+            "#BF7FBF",
+            "#800080",
+            "#FFBF7F",
+            "#804000",
+            "#A67F5B",
+            "#5B3A29",
+            "#C0C0C0",
+            "#808080",
+            "grey",
+            "black",
+            "white"
+          ]
+        },
+        validation: (Rule: any) => Rule.required(),
+    },
+      {
           title: 'Ticker',
           name: 'ticker',
           type: 'string',
@@ -36,42 +79,6 @@ export default {
         },
         validation: (Rule: any) => Rule.required(),
     },
-      {
-          title: 'Color',
-          name: 'color',
-          type: 'color',
-          options: {
-            disableAlpha: true,
-            colorList: [
-              "red",
-              "yellow",
-              "green",
-              "blue",
-              "purple",
-              "orange",
-              "brown",
-              "#FF7F7F",
-              "#800000",
-              "#FFFF7F",
-              "#808000",
-              "#7FFF7F",
-              "#008000",
-              "#7F7FFF",
-              "#000080",
-              "#BF7FBF",
-              "#800080",
-              "#FFBF7F",
-              "#804000",
-              "#A67F5B",
-              "#5B3A29",
-              "#C0C0C0",
-              "#808080",
-              "grey",
-              "black",
-              "white"
-            ]
-          },
-      },
       {
           title: 'Category',
           name: 'category',
@@ -100,12 +107,7 @@ export default {
           title: 'Description',
           name: 'description',
           type: 'text',
-      },
-      {
-        type: 'image',
-        name: 'image',
-        title: 'Image'
-      },
+      }
   ],
   preview: {
       select: {

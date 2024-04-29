@@ -87,7 +87,12 @@ export default {
                 { title: "Food", value: "FOOD" },
                 { title: "Drug", value: "DRUG" },
                 { title: "Generic", value: "GENERIC" },
-                
+                { title: "Waste", value: "WASTE" },
+                { title: "Unstable", value: "UNSTABLE" },
+                { title: "Organism", value: "ORGANISM" },
+                { title: "Polymer", value: "POLYMER" },
+                { title: "Electronic", value: "ELECTRONIC" },
+                { title: "Toxic", value: "TOXIC"}
               ]
           },
       },

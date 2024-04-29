@@ -1,5 +1,6 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
+import {colorInput} from '@sanity/color-input'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
@@ -49,6 +50,7 @@ export default defineConfig({
           .title("Content")
           .items(makeItems(S))
     }),
+    colorInput(),
     visionTool(),
   ],
 

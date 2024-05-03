@@ -10,6 +10,11 @@ export default {
       title: 'Show during tutorial only'
     },
     {
+      type: 'boolean',
+      name: 'graduation',
+      title: 'Show after graduation'
+    },
+    {
       type: 'string',
       name: 'title',
       title: 'Title'

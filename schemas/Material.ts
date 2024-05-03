@@ -104,6 +104,12 @@ export default {
           },
       },
       {
+        name: 'hint',
+        title: 'Hint',
+        type: 'reference',
+        to: [{type: 'message'}]
+      },
+      {
           title: 'Description',
           name: 'description',
           type: 'text',

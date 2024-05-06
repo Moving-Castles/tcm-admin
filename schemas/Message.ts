@@ -15,6 +15,16 @@ export default {
       title: 'Show after graduation'
     },
     {
+      type: 'boolean',
+      name: 'unlocksRatCage',
+      title: 'Unlocks RAT CAGE'
+    },
+    {
+      type: 'boolean',
+      name: 'unlocksMealwormVat',
+      title: 'Unlocks MEALWORM VAT'
+    },
+    {
       type: 'string',
       name: 'title',
       title: 'Title'

@@ -110,6 +110,16 @@ export default {
         to: [{type: 'message'}]
       },
       {
+        type: 'boolean',
+        name: 'unlocksRatCage',
+        title: 'Unlocks RAT CAGE'
+      },
+      {
+        type: 'boolean',
+        name: 'unlocksMealwormVat',
+        title: 'Unlocks MEALWORM VAT'
+      },
+      {
           title: 'Description',
           name: 'description',
           type: 'text',

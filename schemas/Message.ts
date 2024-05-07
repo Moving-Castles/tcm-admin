@@ -11,6 +11,11 @@ export default {
     },
     {
       type: 'boolean',
+      name: 'all',
+      title: 'Send to all stumps'
+    },
+    {
+      type: 'boolean',
       name: 'graduation',
       title: 'Show after graduation'
     },
@@ -38,6 +43,36 @@ export default {
       type: 'text',
       name: 'description',
       title: 'Description'
+    },
+    {
+      type: 'array',
+      name: 'richDescription',
+      title: 'Description (Rich Text)',
+      of: [{
+        type: 'block',
+        marks: {
+          annotations: [
+            {
+              name: 'link',
+              type: 'object',
+              title: 'External link',
+              fields: [
+                {
+                  name: 'href',
+                  type: 'url',
+                  title: 'URL'
+                },
+                {
+                  title: 'Open in new tab',
+                  name: 'blank',
+                  description: 'Read https://css-tricks.com/use-target_blank/',
+                  type: 'boolean'
+                }
+              ]
+            },
+          ]  
+        }
+      }]
     },
     {
       type: 'array',

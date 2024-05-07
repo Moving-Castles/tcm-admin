@@ -39,11 +39,11 @@ export default {
       name: 'sender',
       title: 'Sender'
     },
-    {
-      type: 'text',
-      name: 'description',
-      title: 'Description'
-    },
+    // {
+    //   type: 'text',
+    //   name: 'description',
+    //   title: 'Description'
+    // },
     {
       type: 'array',
       name: 'richDescription',

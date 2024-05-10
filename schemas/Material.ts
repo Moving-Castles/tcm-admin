@@ -104,6 +104,19 @@ export default {
           },
       },
       {
+          name: 'hintMulti',
+          title: 'Hints',
+          type: 'array',
+          of: [
+            {
+              name: 'hint',
+              title: 'Hint',
+              type: 'reference',
+              to: [{type: 'message'}]
+            },      
+          ]
+      },
+      {
         name: 'hint',
         title: 'Hint',
         type: 'reference',

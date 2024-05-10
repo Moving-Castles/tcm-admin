@@ -3,7 +3,17 @@ export default {
   title: 'Tutorial',
   icon: () => '🖇️',
   type: 'document',
+  preview: {
+    select: {
+      title: 'title'
+    }
+  },
   fields: [
+      {
+        name: 'title',
+        title: 'Title',
+        type: 'string'
+      },
       {
         name: 'steps',
         title: 'Steps',
@@ -24,11 +34,16 @@ export default {
                 name: 'explanation',
                 title: 'Explanation',
                 description: 'Client facing',
-                type: 'text'
+                type: 'text',
               },
-            ]
-          }
+            ],
+          },
         ]
-      }
+      },
+      {
+        name: 'postTutorial',
+        title: 'Post-Tutorial message',
+        type: 'contentEditor',
+    },
   ],
 }
